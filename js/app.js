@@ -90,7 +90,7 @@ var Shop = function (data) {
     //handle the item being selected, trigger the click event on the marker
     this.handleSelect = function () {
         google.maps.event.trigger(self.marker, 'click');
-    }
+    };
 
     //extend the global map bounds to the marker's lat/lng
     bounds.extend(self.marker.position);
@@ -178,7 +178,7 @@ function handleGoogleError() {
 
 //set the animation on the marker
 function setMarkerAnimation(marker) {
-    if (marker.getAnimation() != null) {
+    if (marker.getAnimation() !== null) {
         marker.setAnimation(null);
     } else {
         marker.setAnimation(google.maps.Animation.BOUNCE);
