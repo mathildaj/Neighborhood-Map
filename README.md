@@ -4,6 +4,7 @@ A single page JavaScript application for locating Boba tea shops on a neighborho
 1. Utilizing Knockout JS and JQuery framework
 2. Utilizing Google Map API and Foursquare API
 3. Responsive design with Bootstrap CSS
+4. Using Model-View_Controller (MVC) design pattern.
 
 ![alt text](app_screenshot.jpg)
 
@@ -13,8 +14,8 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-1. Obtain a Google Developer API Key. For detailed instruction, click [here].(https://developers.google.com/maps/documentation/embed/get-api-key)
-2. Obtain a Foursquare Developer API client id and client secret. For detailed instruction, click [here].(https://developer.foursquare.com/)
+1. Obtain a Google Developer API Key. For detailed instruction, click [here](https://developers.google.com/maps/documentation/embed/get-api-key)
+2. Obtain a Foursquare Developer API client id and client secret. For detailed instruction, click [here](https://developer.foursquare.com/)
 
 ### Installing the application
 
