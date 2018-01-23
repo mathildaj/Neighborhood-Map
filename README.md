@@ -4,7 +4,7 @@ A single page JavaScript application for locating Boba tea shops on a neighborho
 1. Utilizing Knockout JS and JQuery framework
 2. Utilizing Google Map API and Foursquare API
 3. Responsive design with Bootstrap CSS
-4. Using Model-View_Controller (MVC) design pattern.
+4. Using Model-View-Controller (MVC) design pattern.
 
 ![alt text](app_screenshot.jpg)
 
