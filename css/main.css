@@ -1,0 +1,73 @@
+html, body {
+    font-size: 14px;
+    height: 100%;
+    margin: 0;
+    padding-top: 25px;
+    font-family: 'Poppins', sans-serif;
+}
+
+#sidebar {
+    /*this is the default bootstrap navbar-inverse color */
+    /*background: #222; */
+    background: #7386D5;
+    min-width: 255px;
+}
+
+#items {
+    padding: 10px 0;
+}
+
+#map {
+    height: 100%;
+    min-width: 240px;
+}
+
+
+/*-------override some bootstrap css----*/
+
+.navbar-inverse {
+    background-color: #7386D5 !important;;
+    /*border-color: #E7E7E7 !important;; */
+    border-width: 0px;
+}
+
+.navbar-inverse .navbar-brand {
+    font-weight: bolder !important;
+    color: #d6d6d6 !important;;
+}
+
+
+a {
+    text-align: left  !important;
+    /*color: #b3b3b3  !important; */
+    color: #D7D7D7  !important;
+}
+
+a:active {
+    color: #A7A7A7  !important;
+}
+
+a:focus {
+    color: #A7A7A7  !important;
+}
+
+a:hover {
+    color: #7386D5 !important;
+    background: #fff !important;
+}
+
+
+/*--Media Query--*/
+
+/*--768px is the iPad width--*/
+
+@media screen and (min-width: 768px) {
+    body {
+      padding-top: 25px;
+    }
+}
+@media screen and (min-width: 768px) and (min-height: 500px) {
+    #sidebar {
+      height: 100vh;
+    }
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>San Jose Boba Tea Map</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+
+<body>
+
+    <!-- Header-->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-brand">San Jose Boba Tea</div>
+    </nav>
+
+    <!-- search bar and sidebar list-->
+    <div id="wrapper">
+        <div id="sidebar" class="col-sm-3 col-md-2">
+            <!--search bar-->
+            <ul class="list-unstyled components">
+                 <li>
+                      <div class="input-group">
+                          <input type="text" class="form-control" placeholder="Search" name="search" data-bind="textInput: searchItem, valueUpdate: 'afterkeydown'">
+                            <div class="input-group-btn">
+                                <button class="btn btn-default"><i class="glyphicon glyphicon-search"></i></button>
+                            </div>
+                      </div>
+                </li>
+            </ul>
+            <!--side bar list-->
+            <ul id="items" class="nav nav-sidebar" data-bind="foreach: filteredList">
+                <li>
+                    <a href="#" data-bind="text: name, click: handleSelect"></a>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+
+    <!-- map -->
+    <div id="map"></div>
+
+
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <!-- Bootstrap Js CDN -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!--knockout.js-->
+    <script src="js/lib/knockout-3.4.2.js"></script>
+    <!--my js files-->
+    <script src="js/data.js"></script>
+    <script src="js/app.js"></script>
+
+    <!--Replace YOUR_GOOGLE_API_KEY with your actual api key-->
+    <script async defer
+             src="https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_API_KEY&v=3&callback=initMap" onerror="handleGoogleError()">
+    </script>
+
+</body>
+
+</html>
