@@ -54,8 +54,19 @@ var Shop = function (data) {
         animation: google.maps.Animation.DROP //the marker will have a drop effect when the page first loaded
     });
 
-    //set visible to true by default
+    //set Shop object visible to true by default
     this.visible = ko.observable(true);
+
+    //set the marker visibility based on Shop object visibility
+    this.showMarker = ko.computed(function() {
+        if (self.visible() === true) {
+            self.marker.setMap(map);
+        }
+        else {
+            self.marker.setMap(null);
+        }
+    });
+
 
     //use ajax to get more info from four square API for the shop
 
@@ -94,8 +105,12 @@ var Shop = function (data) {
 
     //extend the global map bounds to the marker's lat/lng
     bounds.extend(self.marker.position);
-    map.fitBounds(bounds);
+    //map.fitBounds(bounds);
 
+    //make map display responsively by using a window resize event and call fitBounds method to make sure map markers always fit on screen as user resizes their browser window
+    google.maps.event.addDomListener(window, 'resize', function() {
+        map.fitBounds(bounds);
+    });
 
 }; //the end of Shop data model
 
