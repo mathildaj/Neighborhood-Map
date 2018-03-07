@@ -8,6 +8,8 @@ A single page JavaScript application for locating Boba tea shops on a neighborho
 
 ![alt text](app_screenshot.jpg)
 
+Go to [here](https://neighborhood-map-mathilda.herokuapp.com/index.html) to see the live version.
+
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
